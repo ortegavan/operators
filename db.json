@@ -1,0 +1,20 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice Andrade", "email": "alice@example.com", "role": "Admin" },
+    { "id": 2, "name": "Bob Borges", "email": "bob@example.com", "role": "Editor" },
+    { "id": 3, "name": "Carol Castro", "email": "carol@example.com", "role": "Viewer" }
+  ],
+  "products": [
+    { "id": 1, "name": "Angular in Action", "category": "Livros", "price": 39.90 },
+    { "id": 2, "name": "RxJS Essentials", "category": "Livros", "price": 29.90 },
+    { "id": 3, "name": "TypeScript Deep Dive", "category": "Livros", "price": 34.90 },
+    { "id": 4, "name": "MacBook Pro", "category": "Eletrônicos", "price": 12999.00 },
+    { "id": 5, "name": "iPad", "category": "Eletrônicos", "price": 5999.00 }
+  ],
+  "todos": [
+    { "id": 1, "title": "Ler documentação do Angular", "completed": false },
+    { "id": 2, "title": "Implementar operadores de Resource", "completed": true },
+    { "id": 3, "title": "Escrever testes com Vitest", "completed": false },
+    { "id": 4, "title": "Publicar artigo no Medium", "completed": false }
+  ]
+}
