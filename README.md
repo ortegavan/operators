@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://angular.dev"><img src="https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white" alt="Angular" /></a>
   <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="https://vitest.dev"><img src="https://img.shields.io/badge/Vitest-3-6E9F18?logo=vitest&logoColor=white" alt="Vitest" /></a>
+  <a href="https://vitest.dev"><img src="https://img.shields.io/badge/Vitest-4-6E9F18?logo=vitest&logoColor=white" alt="Vitest" /></a>
 </div>
 
 Repositório de apoio a artigo em **https://medium.com/@ortegavan**.
