@@ -16,8 +16,8 @@
     <div role="group" aria-label="Seleção de usuário">
       @for (id of userIds; track id) {
         <button
-          [class.active]="userId() === id"
-          [attr.aria-pressed]="userId() === id"
+          [class.active]="userService.userId() === id"
+          [attr.aria-pressed]="userService.userId() === id"
           (click)="selectUser(id)"
         >
           Usuário {{ id }}
@@ -26,12 +26,12 @@
     </div>
 
     <div aria-live="polite" aria-atomic="true">
-      @if (user.isLoading()) {
+      @if (userService.user.isLoading()) {
         <p>Carregando...</p>
       }
     </div>
 
-    @if (user.value(); as u) {
+    @if (userService.user.value(); as u) {
       <article>
         <h3>{{ u.name }}</h3>
         <p>{{ u.email }}</p>
@@ -39,7 +39,7 @@
       </article>
     }
 
-    @if (user.error()) {
+    @if (userService.user.error()) {
       <p role="alert">Erro ao carregar usuário.</p>
     }
   </section>
@@ -51,12 +51,12 @@
       servidor.
     </p>
 
-    @if (todos.isLoading() && !todos.value()) {
+    @if (todoService.todos.isLoading() && !todoService.todos.value()) {
       <p aria-live="polite">Carregando todos...</p>
     }
 
     <ul>
-      @for (todo of todos.value(); track todo.id) {
+      @for (todo of todoService.todos.value(); track todo.id) {
         <li>
           <label>
             <input
@@ -75,12 +75,12 @@
     <h2 id="cache-heading">withCache</h2>
     <p>A lista de produtos é mantida em cache por 60 segundos.</p>
 
-    @if (products.isLoading() && !products.value()) {
+    @if (productService.products.isLoading() && !productService.products.value()) {
       <p aria-live="polite">Carregando produtos...</p>
     }
 
     <ul>
-      @for (product of products.value(); track product.id) {
+      @for (product of productService.products.value(); track product.id) {
         <li>
           <span>{{ product.name }}</span>
           <span class="price">R$ {{ product.price.toFixed(2) }}</span>
@@ -88,7 +88,7 @@
       }
     </ul>
 
-    @if (products.error()) {
+    @if (productService.products.error()) {
       <p role="alert">Erro ao carregar produtos.</p>
     }
   </section>
