@@ -5,26 +5,9 @@ import { withRetry } from './operators/with-retry';
 import { withDebounce } from './operators/with-debounce';
 import { withCache } from './operators/with-cache';
 import { withOptimisticUpdate } from './operators/with-optimistic-update';
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  role: string;
-}
-
-interface Product {
-  id: number;
-  name: string;
-  category: string;
-  price: number;
-}
-
-interface Todo {
-  id: number;
-  title: string;
-  completed: boolean;
-}
+import { User } from './model/user';
+import { Product } from './model/product';
+import { Todo } from './model/todo';
 
 @Component({
   selector: 'app-root',
